@@ -1,0 +1,5078 @@
+{
+  "version": 1,
+  "cycle": {
+    "id": "cycle-4",
+    "number": 4,
+    "status": "active",
+    "contributionCents": 1000,
+    "roundContributionCents": [
+      1000,
+      1100,
+      1100,
+      1100,
+      1100,
+      1100
+    ],
+    "roundCount": 6,
+    "createdAt": "2026-11-08T17:05:58.979Z"
+  },
+  "participants": [
+    {
+      "id": "member-1",
+      "name": "Leidiane",
+      "status": "active"
+    },
+    {
+      "id": "member-2",
+      "name": "Lucas",
+      "status": "active"
+    },
+    {
+      "id": "member-3",
+      "name": "Levi",
+      "status": "active"
+    },
+    {
+      "id": "member-4",
+      "name": "Antonio",
+      "status": "active"
+    },
+    {
+      "id": "member-5",
+      "name": "denize",
+      "status": "active"
+    },
+    {
+      "id": "member-6",
+      "name": "Erick",
+      "status": "active"
+    }
+  ],
+  "rounds": [
+    {
+      "id": "round-1",
+      "number": 1,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-1",
+      "drawStartedAt": "2026-11-06T01:34:38.927Z",
+      "drawCompletedAt": "2026-11-06T01:34:43.449Z",
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:33:21.080Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:34:08.905Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:34:10.126Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:34:11.047Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:34:11.630Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:34:12.323Z",
+          "adminConfirmed": true
+        }
+      ],
+      "spins": [],
+      "tiedParticipantIds": [],
+      "tieCount": 0,
+      "cycleId": "demo-cycle",
+      "cycleNumber": 1
+    },
+    {
+      "id": "round-2",
+      "number": 2,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-4",
+      "drawStartedAt": "2026-11-06T01:41:24.286Z",
+      "drawCompletedAt": "2026-11-06T01:41:28.829Z",
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:36:11.902Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:36:14.275Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:36:15.540Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:36:17.361Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:36:18.165Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T01:36:19.865Z",
+          "adminConfirmed": true
+        }
+      ],
+      "spins": [],
+      "tiedParticipantIds": [],
+      "tieCount": 0,
+      "cycleId": "demo-cycle",
+      "cycleNumber": 1
+    },
+    {
+      "id": "round-3",
+      "number": 3,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-2",
+      "drawStartedAt": "2026-11-06T02:03:05.049Z",
+      "drawCompletedAt": "2026-11-06T02:03:09.568Z",
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:01:40.746Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:01:43.410Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:02:39.272Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:02:40.371Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:02:41.295Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:02:41.941Z",
+          "adminConfirmed": true
+        }
+      ],
+      "spins": [],
+      "tiedParticipantIds": [],
+      "tieCount": 0,
+      "cycleId": "demo-cycle",
+      "cycleNumber": 1
+    },
+    {
+      "id": "round-4",
+      "number": 4,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-6",
+      "drawStartedAt": "2026-11-06T02:06:25.883Z",
+      "drawCompletedAt": "2026-11-06T02:06:30.416Z",
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:05:05.918Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:05:07.153Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:05:59.875Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:06:00.678Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:06:01.713Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-06T02:06:02.425Z",
+          "adminConfirmed": true
+        }
+      ],
+      "spins": [],
+      "tiedParticipantIds": [],
+      "tieCount": 0,
+      "cycleId": "demo-cycle",
+      "cycleNumber": 1
+    },
+    {
+      "id": "round-5",
+      "number": 5,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-5",
+      "drawStartedAt": "2026-11-07T21:47:47.078Z",
+      "drawCompletedAt": "2026-11-07T22:03:46.954Z",
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T21:45:25.948Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T21:45:27.675Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T21:45:28.719Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T21:45:29.582Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T21:45:30.378Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T21:45:31.236Z",
+          "adminConfirmed": true
+        }
+      ],
+      "spins": [
+        {
+          "participantId": "member-6",
+          "resultId": "member-5",
+          "at": "2026-11-07T21:47:47.078Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-5",
+          "at": "2026-11-07T21:48:36.346Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-5",
+          "at": "2026-11-07T21:58:25.597Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-3",
+          "at": "2026-11-07T22:00:16.068Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-5",
+          "at": "2026-11-07T22:02:32.680Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-5",
+          "at": "2026-11-07T22:03:42.423Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "tieCount": 0,
+      "cycleId": "demo-cycle",
+      "cycleNumber": 1
+    },
+    {
+      "id": "round-6",
+      "number": 6,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-3",
+      "drawStartedAt": "2026-11-07T22:14:56.448Z",
+      "drawCompletedAt": "2026-11-07T22:19:43.663Z",
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T22:12:59.402Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T22:13:00.586Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T22:13:01.663Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T22:13:02.607Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T22:13:03.434Z",
+          "adminConfirmed": true
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "confirmedAt": "2026-11-07T22:13:04.180Z",
+          "adminConfirmed": true
+        }
+      ],
+      "spins": [
+        {
+          "participantId": "member-6",
+          "resultId": "member-3",
+          "at": "2026-11-07T22:14:56.448Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-3",
+          "at": "2026-11-07T22:16:24.899Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-3",
+          "at": "2026-11-07T22:17:33.723Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-3",
+          "at": "2026-11-07T22:18:45.891Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-3",
+          "at": "2026-11-07T22:19:01.634Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-3",
+          "at": "2026-11-07T22:19:39.113Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "tieCount": 0,
+      "cycleId": "demo-cycle",
+      "cycleNumber": 1
+    },
+    {
+      "id": "cycle-2-round-1",
+      "number": 1,
+      "cycleId": "cycle-2",
+      "cycleNumber": 2,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-4",
+      "drawStartedAt": "2026-11-08T00:42:27.935Z",
+      "drawCompletedAt": "2026-11-08T00:45:14.216Z",
+      "tieCount": 0,
+      "spins": [
+        {
+          "participantId": "member-1",
+          "resultId": "member-4",
+          "at": "2026-11-08T00:42:27.935Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-2",
+          "at": "2026-11-08T00:43:02.173Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-1",
+          "at": "2026-11-08T00:43:30.206Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-4",
+          "at": "2026-11-08T00:44:10.218Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-4",
+          "at": "2026-11-08T00:44:44.528Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-5",
+          "at": "2026-11-08T00:45:09.671Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:41:04.345Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:41:06.928Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:41:08.323Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:41:09.697Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:41:11.080Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:41:12.456Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-2-round-2",
+      "number": 2,
+      "cycleId": "cycle-2",
+      "cycleNumber": 2,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-6",
+      "drawStartedAt": "2026-11-08T00:47:54.748Z",
+      "drawCompletedAt": "2026-11-08T00:53:23.132Z",
+      "tieCount": 0,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-1",
+          "at": "2026-11-08T00:47:54.748Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-2",
+          "at": "2026-11-08T00:48:30.008Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-6",
+          "at": "2026-11-08T00:49:28.636Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-3",
+          "at": "2026-11-08T00:50:24.145Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-6",
+          "at": "2026-11-08T00:51:27.431Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-5",
+          "at": "2026-11-08T00:53:18.532Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:46:40.457Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:46:41.756Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:46:42.815Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:46:44.063Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:46:45.484Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:46:46.817Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-2-round-3",
+      "number": 3,
+      "cycleId": "cycle-2",
+      "cycleNumber": 2,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-5",
+      "drawStartedAt": "2026-11-08T01:02:25.904Z",
+      "drawCompletedAt": "2026-11-08T01:04:42.551Z",
+      "tieCount": 1,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:02:25.904Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-5",
+          "at": "2026-11-08T01:02:39.970Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-5",
+          "at": "2026-11-08T01:02:57.085Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-5",
+          "at": "2026-11-08T01:03:18.065Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-1",
+          "at": "2026-11-08T01:04:10.633Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-5",
+          "at": "2026-11-08T01:04:38.017Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:57:41.199Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:57:42.121Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:57:42.968Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:57:43.667Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:57:44.432Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T00:57:45.287Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-2-round-4",
+      "number": 4,
+      "cycleId": "cycle-2",
+      "cycleNumber": 2,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-3",
+      "drawStartedAt": "2026-11-08T01:06:26.539Z",
+      "drawCompletedAt": "2026-11-08T01:08:33.504Z",
+      "tieCount": 0,
+      "spins": [
+        {
+          "participantId": "member-5",
+          "resultId": "member-1",
+          "at": "2026-11-08T01:06:26.539Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-3",
+          "at": "2026-11-08T01:06:47.477Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-3",
+          "at": "2026-11-08T01:07:12.966Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-3",
+          "at": "2026-11-08T01:07:34.261Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-1",
+          "at": "2026-11-08T01:08:07.173Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-3",
+          "at": "2026-11-08T01:08:28.959Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:04:55.602Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:04:56.474Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:04:57.365Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:04:58.270Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:04:59.252Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:05:00.200Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-2-round-5",
+      "number": 5,
+      "cycleId": "cycle-2",
+      "cycleNumber": 2,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-1",
+      "drawStartedAt": "2026-11-08T01:09:08.691Z",
+      "drawCompletedAt": "2026-11-08T01:11:25.749Z",
+      "tieCount": 0,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:09:08.691Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-1",
+          "at": "2026-11-08T01:09:52.014Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-1",
+          "at": "2026-11-08T01:10:10.882Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-1",
+          "at": "2026-11-08T01:10:35.636Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-1",
+          "at": "2026-11-08T01:10:53.224Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:11:21.209Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:08:43.338Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:08:44.291Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:08:44.930Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:08:45.707Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:08:46.606Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:08:47.765Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-2-round-6",
+      "number": 6,
+      "cycleId": "cycle-2",
+      "cycleNumber": 2,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-2",
+      "drawStartedAt": "2026-11-08T01:16:01.388Z",
+      "drawCompletedAt": "2026-11-08T01:18:44.059Z",
+      "tieCount": 0,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:16:01.388Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:16:18.467Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:17:26.362Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:17:51.817Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:18:08.443Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:18:39.508Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:15:34.207Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:15:35.393Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:15:36.548Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:15:37.654Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:15:38.828Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T01:15:39.790Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-3-round-1",
+      "number": 1,
+      "cycleId": "cycle-3",
+      "cycleNumber": 3,
+      "status": "completed",
+      "prizeCents": 6000,
+      "winnerId": "member-4",
+      "drawStartedAt": "2026-11-08T16:16:45.956Z",
+      "drawCompletedAt": "2026-11-08T16:19:04.239Z",
+      "tieCount": 1,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-4",
+          "at": "2026-11-08T16:16:45.956Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-4",
+          "at": "2026-11-08T16:17:04.398Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-4",
+          "at": "2026-11-08T16:17:30.834Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-4",
+          "at": "2026-11-08T16:18:07.130Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-4",
+          "at": "2026-11-08T16:18:29.537Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:18:59.699Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:16:33.001Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:16:34.016Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:16:34.953Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:16:35.900Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:16:36.649Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:16:37.589Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-3-round-2",
+      "number": 2,
+      "cycleId": "cycle-3",
+      "cycleNumber": 3,
+      "status": "completed",
+      "prizeCents": 6600,
+      "winnerId": "member-3",
+      "drawStartedAt": "2026-11-08T16:34:24.870Z",
+      "drawCompletedAt": "2026-11-08T16:37:11.743Z",
+      "tieCount": 3,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-3",
+          "at": "2026-11-08T16:34:24.870Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-3",
+          "at": "2026-11-08T16:34:37.571Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:34:53.804Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-3",
+          "at": "2026-11-08T16:35:37.331Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:36:49.909Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:37:07.196Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:19:44.854Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:19:45.973Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:19:46.744Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:19:47.421Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:19:48.181Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:19:48.893Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-3-round-3",
+      "number": 3,
+      "cycleId": "cycle-3",
+      "cycleNumber": 3,
+      "status": "completed",
+      "prizeCents": 6600,
+      "winnerId": "member-5",
+      "drawStartedAt": "2026-11-08T16:44:30.594Z",
+      "drawCompletedAt": "2026-11-08T16:46:49.011Z",
+      "tieCount": 1,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:44:30.594Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:44:53.854Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:45:08.656Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:45:25.443Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:46:05.550Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:46:44.466Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:41:14.326Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:41:15.687Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:41:16.813Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:41:18.026Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:41:19.054Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:41:20.101Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-3-round-4",
+      "number": 4,
+      "cycleId": "cycle-3",
+      "cycleNumber": 3,
+      "status": "completed",
+      "prizeCents": 6600,
+      "winnerId": "member-6",
+      "drawStartedAt": "2026-11-08T16:48:03.062Z",
+      "drawCompletedAt": "2026-11-08T16:52:45.165Z",
+      "tieCount": 0,
+      "spins": [
+        {
+          "participantId": "member-5",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:48:03.062Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:48:53.840Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:49:16.924Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:50:08.619Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:51:31.846Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:52:40.639Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:47:13.753Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:47:14.919Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:47:15.729Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:47:16.576Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:47:17.538Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:47:18.313Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-3-round-5",
+      "number": 5,
+      "cycleId": "cycle-3",
+      "cycleNumber": 3,
+      "status": "completed",
+      "prizeCents": 6600,
+      "winnerId": "member-1",
+      "drawStartedAt": "2026-11-08T16:59:31.274Z",
+      "drawCompletedAt": "2026-11-08T17:02:28.202Z",
+      "tieCount": 0,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:59:31.274Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:59:50.998Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-2",
+          "at": "2026-11-08T17:01:01.820Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-1",
+          "at": "2026-11-08T17:01:15.663Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-1",
+          "at": "2026-11-08T17:01:47.032Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-1",
+          "at": "2026-11-08T17:02:23.656Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:58:55.822Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:58:56.687Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:58:57.399Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:58:58.217Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:58:58.954Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T16:59:00.635Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-3-round-6",
+      "number": 6,
+      "cycleId": "cycle-3",
+      "cycleNumber": 3,
+      "status": "completed",
+      "prizeCents": 6600,
+      "winnerId": "member-2",
+      "drawStartedAt": "2026-11-08T17:03:05.015Z",
+      "drawCompletedAt": "2026-11-08T17:05:21.771Z",
+      "tieCount": 0,
+      "spins": [
+        {
+          "participantId": "member-5",
+          "resultId": "member-2",
+          "at": "2026-11-08T17:03:05.015Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-2",
+          "at": "2026-11-08T17:03:22.595Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-2",
+          "at": "2026-11-08T17:03:56.152Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-2",
+          "at": "2026-11-08T17:04:17.045Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-2",
+          "at": "2026-11-08T17:04:39.442Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-2",
+          "at": "2026-11-08T17:05:17.207Z"
+        }
+      ],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T17:02:42.679Z"
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T17:02:43.859Z"
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T17:02:44.748Z"
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T17:02:46.116Z"
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T17:02:46.854Z"
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "confirmed",
+          "adminConfirmed": true,
+          "confirmedAt": "2026-11-08T17:02:47.668Z"
+        }
+      ]
+    },
+    {
+      "id": "cycle-4-round-1",
+      "number": 1,
+      "cycleId": "cycle-4",
+      "cycleNumber": 4,
+      "status": "open",
+      "prizeCents": 6000,
+      "winnerId": null,
+      "drawStartedAt": null,
+      "drawCompletedAt": null,
+      "tieCount": 0,
+      "spins": [],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1000,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1000,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1000,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1000,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1000,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1000,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        }
+      ]
+    },
+    {
+      "id": "cycle-4-round-2",
+      "number": 2,
+      "cycleId": "cycle-4",
+      "cycleNumber": 4,
+      "status": "pending",
+      "prizeCents": 6600,
+      "winnerId": null,
+      "drawStartedAt": null,
+      "drawCompletedAt": null,
+      "tieCount": 0,
+      "spins": [],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        }
+      ]
+    },
+    {
+      "id": "cycle-4-round-3",
+      "number": 3,
+      "cycleId": "cycle-4",
+      "cycleNumber": 4,
+      "status": "pending",
+      "prizeCents": 6600,
+      "winnerId": null,
+      "drawStartedAt": null,
+      "drawCompletedAt": null,
+      "tieCount": 0,
+      "spins": [],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        }
+      ]
+    },
+    {
+      "id": "cycle-4-round-4",
+      "number": 4,
+      "cycleId": "cycle-4",
+      "cycleNumber": 4,
+      "status": "pending",
+      "prizeCents": 6600,
+      "winnerId": null,
+      "drawStartedAt": null,
+      "drawCompletedAt": null,
+      "tieCount": 0,
+      "spins": [],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        }
+      ]
+    },
+    {
+      "id": "cycle-4-round-5",
+      "number": 5,
+      "cycleId": "cycle-4",
+      "cycleNumber": 4,
+      "status": "pending",
+      "prizeCents": 6600,
+      "winnerId": null,
+      "drawStartedAt": null,
+      "drawCompletedAt": null,
+      "tieCount": 0,
+      "spins": [],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        }
+      ]
+    },
+    {
+      "id": "cycle-4-round-6",
+      "number": 6,
+      "cycleId": "cycle-4",
+      "cycleNumber": 4,
+      "status": "pending",
+      "prizeCents": 6600,
+      "winnerId": null,
+      "drawStartedAt": null,
+      "drawCompletedAt": null,
+      "tieCount": 0,
+      "spins": [],
+      "tiedParticipantIds": [],
+      "payments": [
+        {
+          "userId": "member-1",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-2",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-3",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-4",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-5",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        },
+        {
+          "userId": "member-6",
+          "amountCents": 1100,
+          "status": "pending",
+          "adminConfirmed": false,
+          "confirmedAt": null
+        }
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "type": "cycle_created",
+      "at": "2026-11-05T22:08:56.441Z",
+      "details": "Ciclo demonstrativo criado."
+    },
+    {
+      "type": "master_admin_created",
+      "at": "2026-11-06T00:18:23.470Z",
+      "userId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Conta de administrador mestre configurada."
+    },
+    {
+      "type": "master_admin_initial_setup",
+      "at": "2026-11-06T00:18:23.470Z",
+      "userId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Senha inicial do administrador configurada pelo navegador local."
+    },
+    {
+      "type": "participant_account_created",
+      "at": "2026-11-06T00:20:36.775Z",
+      "userId": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "details": "Conta de participante criada."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:00:39.219Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-06T01:00:48.100Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:00:49.747Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-06T01:04:38.170Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:12:08.128Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-06T01:15:36.579Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:23:07.468Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-06T01:25:50.694Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:33:21.080Z",
+      "roundId": "round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:34:08.905Z",
+      "roundId": "round-1",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:34:10.126Z",
+      "roundId": "round-1",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:34:11.047Z",
+      "roundId": "round-1",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:34:11.630Z",
+      "roundId": "round-1",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:34:12.323Z",
+      "roundId": "round-1",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-06T01:34:38.927Z",
+      "roundId": "round-1",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "details": "Sorteio iniciado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-06T01:34:43.449Z",
+      "roundId": "round-1",
+      "winnerId": "member-1",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:36:11.902Z",
+      "roundId": "round-2",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:36:14.275Z",
+      "roundId": "round-2",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:36:15.540Z",
+      "roundId": "round-2",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:36:17.361Z",
+      "roundId": "round-2",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:36:18.165Z",
+      "roundId": "round-2",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T01:36:19.865Z",
+      "roundId": "round-2",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_account_created",
+      "at": "2026-11-06T01:40:15.236Z",
+      "userId": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "details": "Conta de participante criada."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-06T01:41:24.286Z",
+      "roundId": "round-2",
+      "requestedBy": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Sorteio iniciado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-06T01:41:28.829Z",
+      "roundId": "round-2",
+      "winnerId": "member-4",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:01:40.746Z",
+      "roundId": "round-3",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:01:43.410Z",
+      "roundId": "round-3",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:02:39.272Z",
+      "roundId": "round-3",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:02:40.371Z",
+      "roundId": "round-3",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:02:41.295Z",
+      "roundId": "round-3",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:02:41.941Z",
+      "roundId": "round-3",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-06T02:03:05.049Z",
+      "roundId": "round-3",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "details": "Sorteio iniciado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-06T02:03:09.568Z",
+      "roundId": "round-3",
+      "winnerId": "member-2",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:04:07.672Z",
+      "roundId": "round-4",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-06T02:04:08.639Z",
+      "roundId": "round-4",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:05:05.918Z",
+      "roundId": "round-4",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:05:07.153Z",
+      "roundId": "round-4",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:05:59.875Z",
+      "roundId": "round-4",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:06:00.678Z",
+      "roundId": "round-4",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:06:01.713Z",
+      "roundId": "round-4",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T02:06:02.425Z",
+      "roundId": "round-4",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-06T02:06:25.883Z",
+      "roundId": "round-4",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "details": "Sorteio iniciado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-06T02:06:30.416Z",
+      "roundId": "round-4",
+      "winnerId": "member-6",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T23:07:50.659Z",
+      "roundId": "round-5",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-06T23:17:19.311Z",
+      "roundId": "round-5",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T23:25:47.370Z",
+      "roundId": "round-5",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T23:26:40.660Z",
+      "roundId": "round-5",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T23:26:42.025Z",
+      "roundId": "round-5",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T23:26:42.978Z",
+      "roundId": "round-5",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T23:26:44.057Z",
+      "roundId": "round-5",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-06T23:26:44.871Z",
+      "roundId": "round-5",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "roulette_participant_updated_by_admin",
+      "at": "2026-11-06T23:42:47.209Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "changes": [
+        {
+          "id": "member-1",
+          "previousName": "Leidiane Pereira",
+          "name": "Leidiane",
+          "previousPosition": 1,
+          "position": 1
+        },
+        {
+          "id": "member-2",
+          "previousName": "Lucas Gabriel Pereira Dos Santos",
+          "name": "Lucas",
+          "previousPosition": 2,
+          "position": 2
+        }
+      ],
+      "details": "Nome ou posicao da fatia da roleta atualizado pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-07T00:12:35.507Z",
+      "roundId": "round-5",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-07T00:12:36.761Z",
+      "roundId": "round-5",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-07T00:12:38.200Z",
+      "roundId": "round-5",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-07T00:12:39.440Z",
+      "roundId": "round-5",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-07T00:12:40.629Z",
+      "roundId": "round-5",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-07T00:12:43.724Z",
+      "roundId": "round-5",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "participant_account_created",
+      "at": "2026-11-07T21:33:31.021Z",
+      "userId": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "details": "Conta de participante criada."
+    },
+    {
+      "type": "participant_account_created",
+      "at": "2026-11-07T21:38:36.640Z",
+      "userId": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "details": "Conta de participante criada."
+    },
+    {
+      "type": "participant_account_created",
+      "at": "2026-11-07T21:41:34.392Z",
+      "userId": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "details": "Conta de participante criada."
+    },
+    {
+      "type": "participant_account_created",
+      "at": "2026-11-07T21:43:58.436Z",
+      "userId": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "details": "Conta de participante criada."
+    },
+    {
+      "type": "roulette_participant_updated_by_admin",
+      "at": "2026-11-07T21:44:50.863Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "changes": [
+        {
+          "id": "member-3",
+          "previousName": "Levi Gabriel Pereira dos Santos",
+          "name": "Levi",
+          "previousPosition": 3,
+          "position": 3
+        },
+        {
+          "id": "member-4",
+          "previousName": "Antonio Rodrigues de Souza",
+          "name": "Antonio",
+          "previousPosition": 4,
+          "position": 4
+        },
+        {
+          "id": "member-5",
+          "previousName": "denize de souza",
+          "name": "denize",
+          "previousPosition": 5,
+          "position": 5
+        },
+        {
+          "id": "member-6",
+          "previousName": "Jose Erick da silva dos santos",
+          "name": "Erick",
+          "previousPosition": 6,
+          "position": 6
+        }
+      ],
+      "details": "Nome ou posicao da fatia da roleta atualizado pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T21:45:25.948Z",
+      "roundId": "round-5",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T21:45:27.675Z",
+      "roundId": "round-5",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T21:45:28.719Z",
+      "roundId": "round-5",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T21:45:29.582Z",
+      "roundId": "round-5",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T21:45:30.378Z",
+      "roundId": "round-5",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T21:45:31.236Z",
+      "roundId": "round-5",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T21:47:47.078Z",
+      "roundId": "round-5",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T21:48:36.346Z",
+      "roundId": "round-5",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T21:58:25.597Z",
+      "roundId": "round-5",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:00:16.068Z",
+      "roundId": "round-5",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:02:32.680Z",
+      "roundId": "round-5",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:03:42.423Z",
+      "roundId": "round-5",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-07T22:03:42.423Z",
+      "roundId": "round-5",
+      "winnerId": "member-5",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-07T22:03:46.954Z",
+      "roundId": "round-5",
+      "winnerId": "member-5",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T22:12:59.402Z",
+      "roundId": "round-6",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T22:13:00.586Z",
+      "roundId": "round-6",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T22:13:01.663Z",
+      "roundId": "round-6",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T22:13:02.607Z",
+      "roundId": "round-6",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T22:13:03.434Z",
+      "roundId": "round-6",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-07T22:13:04.180Z",
+      "roundId": "round-6",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:14:56.448Z",
+      "roundId": "round-6",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:16:24.899Z",
+      "roundId": "round-6",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:17:33.723Z",
+      "roundId": "round-6",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:18:45.891Z",
+      "roundId": "round-6",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:19:01.634Z",
+      "roundId": "round-6",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-07T22:19:39.113Z",
+      "roundId": "round-6",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-07T22:19:39.113Z",
+      "roundId": "round-6",
+      "winnerId": "member-3",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-07T22:19:43.663Z",
+      "roundId": "round-6",
+      "winnerId": "member-3",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "cycle_completed",
+      "at": "2026-11-07T23:32:21.931Z",
+      "cycleId": "demo-cycle",
+      "details": "As seis rodadas do ciclo foram concluídas."
+    },
+    {
+      "type": "cycle_renewed",
+      "at": "2026-11-08T00:05:10.684Z",
+      "cycleId": "cycle-2",
+      "details": "Ciclo 2 iniciado pelo administrador."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:41:04.345Z",
+      "roundId": "cycle-2-round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:41:06.928Z",
+      "roundId": "cycle-2-round-1",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:41:08.323Z",
+      "roundId": "cycle-2-round-1",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:41:09.697Z",
+      "roundId": "cycle-2-round-1",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:41:11.080Z",
+      "roundId": "cycle-2-round-1",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:41:12.456Z",
+      "roundId": "cycle-2-round-1",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:42:27.935Z",
+      "roundId": "cycle-2-round-1",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:43:02.173Z",
+      "roundId": "cycle-2-round-1",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:43:30.206Z",
+      "roundId": "cycle-2-round-1",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:44:10.218Z",
+      "roundId": "cycle-2-round-1",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:44:44.528Z",
+      "roundId": "cycle-2-round-1",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:45:09.671Z",
+      "roundId": "cycle-2-round-1",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T00:45:09.671Z",
+      "roundId": "cycle-2-round-1",
+      "winnerId": "member-4",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T00:45:14.216Z",
+      "roundId": "cycle-2-round-1",
+      "winnerId": "member-4",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:46:40.457Z",
+      "roundId": "cycle-2-round-2",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:46:41.756Z",
+      "roundId": "cycle-2-round-2",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:46:42.815Z",
+      "roundId": "cycle-2-round-2",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:46:44.063Z",
+      "roundId": "cycle-2-round-2",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:46:45.484Z",
+      "roundId": "cycle-2-round-2",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:46:46.817Z",
+      "roundId": "cycle-2-round-2",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:47:54.748Z",
+      "roundId": "cycle-2-round-2",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:48:30.008Z",
+      "roundId": "cycle-2-round-2",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:49:28.636Z",
+      "roundId": "cycle-2-round-2",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:50:24.145Z",
+      "roundId": "cycle-2-round-2",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:51:27.431Z",
+      "roundId": "cycle-2-round-2",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:53:18.532Z",
+      "roundId": "cycle-2-round-2",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T00:53:18.532Z",
+      "roundId": "cycle-2-round-2",
+      "winnerId": "member-6",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T00:53:23.132Z",
+      "roundId": "cycle-2-round-2",
+      "winnerId": "member-6",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:57:41.199Z",
+      "roundId": "cycle-2-round-3",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:57:42.121Z",
+      "roundId": "cycle-2-round-3",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:57:42.968Z",
+      "roundId": "cycle-2-round-3",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:57:43.667Z",
+      "roundId": "cycle-2-round-3",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:57:44.432Z",
+      "roundId": "cycle-2-round-3",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T00:57:45.287Z",
+      "roundId": "cycle-2-round-3",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:59:00.668Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:59:31.621Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T00:59:50.531Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:00:15.455Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:00:47.757Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:01:27.806Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_tie_restarted",
+      "at": "2026-11-08T01:01:27.806Z",
+      "roundId": "cycle-2-round-3",
+      "attempt": 1,
+      "tiedParticipantIds": [
+        "member-1",
+        "member-3"
+      ],
+      "highestCount": 2,
+      "spins": [
+        {
+          "participantId": "member-5",
+          "resultId": "member-1",
+          "at": "2026-11-08T00:59:00.668Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-3",
+          "at": "2026-11-08T00:59:31.621Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-5",
+          "at": "2026-11-08T00:59:50.531Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-2",
+          "at": "2026-11-08T01:00:15.455Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-3",
+          "at": "2026-11-08T01:00:47.757Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-1",
+          "at": "2026-11-08T01:01:27.806Z"
+        }
+      ],
+      "details": "Os giros terminaram empatados; os resultados foram reiniciados e todos podem girar novamente."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:02:25.904Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:02:39.970Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:02:57.085Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:03:18.065Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:04:10.633Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:04:38.017Z",
+      "roundId": "cycle-2-round-3",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T01:04:38.017Z",
+      "roundId": "cycle-2-round-3",
+      "winnerId": "member-5",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T01:04:42.551Z",
+      "roundId": "cycle-2-round-3",
+      "winnerId": "member-5",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:04:55.602Z",
+      "roundId": "cycle-2-round-4",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:04:56.474Z",
+      "roundId": "cycle-2-round-4",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:04:57.365Z",
+      "roundId": "cycle-2-round-4",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:04:58.270Z",
+      "roundId": "cycle-2-round-4",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:04:59.252Z",
+      "roundId": "cycle-2-round-4",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:05:00.200Z",
+      "roundId": "cycle-2-round-4",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:06:26.539Z",
+      "roundId": "cycle-2-round-4",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:06:47.477Z",
+      "roundId": "cycle-2-round-4",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:07:12.966Z",
+      "roundId": "cycle-2-round-4",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:07:34.261Z",
+      "roundId": "cycle-2-round-4",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:08:07.173Z",
+      "roundId": "cycle-2-round-4",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:08:28.959Z",
+      "roundId": "cycle-2-round-4",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T01:08:28.959Z",
+      "roundId": "cycle-2-round-4",
+      "winnerId": "member-3",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T01:08:33.504Z",
+      "roundId": "cycle-2-round-4",
+      "winnerId": "member-3",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:08:43.338Z",
+      "roundId": "cycle-2-round-5",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:08:44.291Z",
+      "roundId": "cycle-2-round-5",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:08:44.930Z",
+      "roundId": "cycle-2-round-5",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:08:45.707Z",
+      "roundId": "cycle-2-round-5",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:08:46.606Z",
+      "roundId": "cycle-2-round-5",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:08:47.765Z",
+      "roundId": "cycle-2-round-5",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:09:08.691Z",
+      "roundId": "cycle-2-round-5",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:09:52.014Z",
+      "roundId": "cycle-2-round-5",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:10:10.882Z",
+      "roundId": "cycle-2-round-5",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:10:35.636Z",
+      "roundId": "cycle-2-round-5",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:10:53.224Z",
+      "roundId": "cycle-2-round-5",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:11:21.209Z",
+      "roundId": "cycle-2-round-5",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T01:11:21.209Z",
+      "roundId": "cycle-2-round-5",
+      "winnerId": "member-1",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T01:11:25.749Z",
+      "roundId": "cycle-2-round-5",
+      "winnerId": "member-1",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:15:34.207Z",
+      "roundId": "cycle-2-round-6",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:15:35.393Z",
+      "roundId": "cycle-2-round-6",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:15:36.548Z",
+      "roundId": "cycle-2-round-6",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:15:37.654Z",
+      "roundId": "cycle-2-round-6",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:15:38.828Z",
+      "roundId": "cycle-2-round-6",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T01:15:39.790Z",
+      "roundId": "cycle-2-round-6",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:16:01.388Z",
+      "roundId": "cycle-2-round-6",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:16:18.467Z",
+      "roundId": "cycle-2-round-6",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:17:26.362Z",
+      "roundId": "cycle-2-round-6",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:17:51.817Z",
+      "roundId": "cycle-2-round-6",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:18:08.443Z",
+      "roundId": "cycle-2-round-6",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T01:18:39.508Z",
+      "roundId": "cycle-2-round-6",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T01:18:39.508Z",
+      "roundId": "cycle-2-round-6",
+      "winnerId": "member-2",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T01:18:44.059Z",
+      "roundId": "cycle-2-round-6",
+      "winnerId": "member-2",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "cycle_completed",
+      "at": "2026-11-08T01:18:44.059Z",
+      "cycleId": "cycle-2",
+      "details": "As seis rodadas do ciclo foram concluídas."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:18.313Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "cycle-2-round-6",
+      "details": "Registro do sorteio do ciclo 2, mes 6, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:20.826Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "cycle-2-round-5",
+      "details": "Registro do sorteio do ciclo 2, mes 5, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:23.071Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "cycle-2-round-4",
+      "details": "Registro do sorteio do ciclo 2, mes 4, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:25.519Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "cycle-2-round-3",
+      "details": "Registro do sorteio do ciclo 2, mes 3, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:27.424Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "cycle-2-round-2",
+      "details": "Registro do sorteio do ciclo 2, mes 2, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:29.547Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "cycle-2-round-1",
+      "details": "Registro do sorteio do ciclo 2, mes 1, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:31.856Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "round-6",
+      "details": "Registro do sorteio do ciclo 1, mes 6, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:34.608Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "round-5",
+      "details": "Registro do sorteio do ciclo 1, mes 5, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:36.971Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "round-4",
+      "details": "Registro do sorteio do ciclo 1, mes 4, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:39:39.109Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "round-3",
+      "details": "Registro do sorteio do ciclo 1, mes 3, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:40:12.056Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "round-2",
+      "details": "Registro do sorteio do ciclo 1, mes 2, removido do historico pelo administrador."
+    },
+    {
+      "type": "history_round_deleted",
+      "at": "2026-11-08T15:40:14.136Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "roundId": "round-1",
+      "details": "Registro do sorteio do ciclo 1, mes 1, removido do historico pelo administrador."
+    },
+    {
+      "type": "cycle_renewed",
+      "at": "2026-11-08T16:06:12.566Z",
+      "cycleId": "cycle-3",
+      "details": "Ciclo 3 iniciado pelo administrador."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:06:38.522Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:06:39.840Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:06:40.608Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:06:41.794Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:06:43.458Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:06:44.535Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:07:07.507Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:07:31.054Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:08:46.961Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:09:47.356Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:10:18.054Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:11:36.781Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_tie_restarted",
+      "at": "2026-11-08T16:11:36.781Z",
+      "roundId": "cycle-3-round-1",
+      "attempt": 1,
+      "tiedParticipantIds": [
+        "member-3",
+        "member-5"
+      ],
+      "highestCount": 2,
+      "spins": [
+        {
+          "participantId": "member-5",
+          "resultId": "member-3",
+          "at": "2026-11-08T16:07:07.507Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-3",
+          "at": "2026-11-08T16:07:31.054Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:08:46.961Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:09:47.356Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-4",
+          "at": "2026-11-08T16:10:18.054Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:11:36.781Z"
+        }
+      ],
+      "details": "Os giros terminaram empatados; os resultados foram reiniciados e todos podem girar novamente."
+    },
+    {
+      "type": "cycle_round_values_updated",
+      "at": "2026-11-08T16:13:32.808Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "cycleId": "cycle-3",
+      "roundContributionCents": [
+        1000,
+        1100,
+        1100,
+        1100,
+        1100,
+        1100
+      ],
+      "details": "Valores das contribuicoes atualizados pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-08T16:13:51.715Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-08T16:13:52.687Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-08T16:13:53.726Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-08T16:13:54.726Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-08T16:13:55.722Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "payment_reverted_by_admin",
+      "at": "2026-11-08T16:13:56.592Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento marcado como pendente pelo administrador mestre."
+    },
+    {
+      "type": "cycle_round_values_updated",
+      "at": "2026-11-08T16:14:00.786Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "cycleId": "cycle-3",
+      "roundContributionCents": [
+        1000,
+        1100,
+        1100,
+        1100,
+        1100,
+        1100
+      ],
+      "details": "Valores das contribuicoes atualizados pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:16:33.001Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:16:34.016Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:16:34.953Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:16:35.900Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:16:36.649Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:16:37.589Z",
+      "roundId": "cycle-3-round-1",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:16:45.956Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:17:04.398Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:17:30.834Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:18:07.130Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:18:29.537Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-4",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:18:59.699Z",
+      "roundId": "cycle-3-round-1",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T16:18:59.699Z",
+      "roundId": "cycle-3-round-1",
+      "winnerId": "member-4",
+      "prizeCents": 6000,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T16:19:04.239Z",
+      "roundId": "cycle-3-round-1",
+      "winnerId": "member-4",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:19:44.854Z",
+      "roundId": "cycle-3-round-2",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:19:45.973Z",
+      "roundId": "cycle-3-round-2",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:19:46.744Z",
+      "roundId": "cycle-3-round-2",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:19:47.421Z",
+      "roundId": "cycle-3-round-2",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:19:48.181Z",
+      "roundId": "cycle-3-round-2",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:19:48.893Z",
+      "roundId": "cycle-3-round-2",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:20:33.428Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:21:04.307Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:21:35.233Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:22:20.832Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:22:45.283Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:23:15.081Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_tie_restarted",
+      "at": "2026-11-08T16:23:15.081Z",
+      "roundId": "cycle-3-round-2",
+      "attempt": 1,
+      "tiedParticipantIds": [
+        "member-1",
+        "member-6"
+      ],
+      "highestCount": 2,
+      "spins": [
+        {
+          "participantId": "member-5",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:20:33.428Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:21:04.307Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:21:35.233Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-3",
+          "at": "2026-11-08T16:22:20.832Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:22:45.283Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:23:15.081Z"
+        }
+      ],
+      "details": "Os giros terminaram empatados; os resultados foram reiniciados e todos podem girar novamente."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:24:01.077Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:24:46.958Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:25:43.096Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:28:57.423Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:30:06.182Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:30:27.660Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_tie_restarted",
+      "at": "2026-11-08T16:30:27.660Z",
+      "roundId": "cycle-3-round-2",
+      "attempt": 2,
+      "tiedParticipantIds": [
+        "member-1",
+        "member-5"
+      ],
+      "highestCount": 2,
+      "spins": [
+        {
+          "participantId": "member-4",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:24:01.077Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:24:46.958Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:25:43.096Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:28:57.423Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:30:06.182Z"
+        },
+        {
+          "participantId": "member-5",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:30:27.660Z"
+        }
+      ],
+      "details": "Os giros terminaram empatados; os resultados foram reiniciados e todos podem girar novamente."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:30:52.604Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:31:26.487Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:32:01.379Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:32:32.706Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:32:49.074Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:34:02.908Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_tie_restarted",
+      "at": "2026-11-08T16:34:02.908Z",
+      "roundId": "cycle-3-round-2",
+      "attempt": 3,
+      "tiedParticipantIds": [
+        "member-2",
+        "member-6"
+      ],
+      "highestCount": 2,
+      "spins": [
+        {
+          "participantId": "member-5",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:30:52.604Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:31:26.487Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:32:01.379Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:32:32.706Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:32:49.074Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:34:02.908Z"
+        }
+      ],
+      "details": "Os giros terminaram empatados; os resultados foram reiniciados e todos podem girar novamente."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:34:24.870Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:34:37.571Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:34:53.804Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:35:37.331Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-3",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:36:49.909Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:37:07.196Z",
+      "roundId": "cycle-3-round-2",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T16:37:07.196Z",
+      "roundId": "cycle-3-round-2",
+      "winnerId": "member-3",
+      "prizeCents": 6600,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T16:37:11.743Z",
+      "roundId": "cycle-3-round-2",
+      "winnerId": "member-3",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:41:14.326Z",
+      "roundId": "cycle-3-round-3",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:41:15.687Z",
+      "roundId": "cycle-3-round-3",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:41:16.813Z",
+      "roundId": "cycle-3-round-3",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:41:18.026Z",
+      "roundId": "cycle-3-round-3",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:41:19.054Z",
+      "roundId": "cycle-3-round-3",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:41:20.101Z",
+      "roundId": "cycle-3-round-3",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:41:47.388Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:42:28.893Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:42:47.914Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:43:24.486Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:43:38.289Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:44:13.725Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_tie_restarted",
+      "at": "2026-11-08T16:44:13.725Z",
+      "roundId": "cycle-3-round-3",
+      "attempt": 1,
+      "tiedParticipantIds": [
+        "member-2",
+        "member-1"
+      ],
+      "highestCount": 2,
+      "spins": [
+        {
+          "participantId": "member-5",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:41:47.388Z"
+        },
+        {
+          "participantId": "member-1",
+          "resultId": "member-2",
+          "at": "2026-11-08T16:42:28.893Z"
+        },
+        {
+          "participantId": "member-2",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:42:47.914Z"
+        },
+        {
+          "participantId": "member-3",
+          "resultId": "member-5",
+          "at": "2026-11-08T16:43:24.486Z"
+        },
+        {
+          "participantId": "member-6",
+          "resultId": "member-6",
+          "at": "2026-11-08T16:43:38.289Z"
+        },
+        {
+          "participantId": "member-4",
+          "resultId": "member-1",
+          "at": "2026-11-08T16:44:13.725Z"
+        }
+      ],
+      "details": "Os giros terminaram empatados; os resultados foram reiniciados e todos podem girar novamente."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:44:30.594Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:44:53.854Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:45:08.656Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:45:25.443Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:46:05.550Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:46:44.466Z",
+      "roundId": "cycle-3-round-3",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-5",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T16:46:44.466Z",
+      "roundId": "cycle-3-round-3",
+      "winnerId": "member-5",
+      "prizeCents": 6600,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T16:46:49.011Z",
+      "roundId": "cycle-3-round-3",
+      "winnerId": "member-5",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:47:13.753Z",
+      "roundId": "cycle-3-round-4",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:47:14.919Z",
+      "roundId": "cycle-3-round-4",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:47:15.729Z",
+      "roundId": "cycle-3-round-4",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:47:16.576Z",
+      "roundId": "cycle-3-round-4",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:47:17.538Z",
+      "roundId": "cycle-3-round-4",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:47:18.313Z",
+      "roundId": "cycle-3-round-4",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:48:03.062Z",
+      "roundId": "cycle-3-round-4",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:48:53.840Z",
+      "roundId": "cycle-3-round-4",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:49:16.924Z",
+      "roundId": "cycle-3-round-4",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:50:08.619Z",
+      "roundId": "cycle-3-round-4",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:51:31.846Z",
+      "roundId": "cycle-3-round-4",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:52:40.639Z",
+      "roundId": "cycle-3-round-4",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-6",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T16:52:40.639Z",
+      "roundId": "cycle-3-round-4",
+      "winnerId": "member-6",
+      "prizeCents": 6600,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T16:52:45.165Z",
+      "roundId": "cycle-3-round-4",
+      "winnerId": "member-6",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:58:55.822Z",
+      "roundId": "cycle-3-round-5",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:58:56.687Z",
+      "roundId": "cycle-3-round-5",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:58:57.399Z",
+      "roundId": "cycle-3-round-5",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:58:58.217Z",
+      "roundId": "cycle-3-round-5",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:58:58.954Z",
+      "roundId": "cycle-3-round-5",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T16:59:00.635Z",
+      "roundId": "cycle-3-round-5",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:59:31.274Z",
+      "roundId": "cycle-3-round-5",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T16:59:50.998Z",
+      "roundId": "cycle-3-round-5",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:01:01.820Z",
+      "roundId": "cycle-3-round-5",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:01:15.663Z",
+      "roundId": "cycle-3-round-5",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:01:47.032Z",
+      "roundId": "cycle-3-round-5",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:02:23.656Z",
+      "roundId": "cycle-3-round-5",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-1",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T17:02:23.656Z",
+      "roundId": "cycle-3-round-5",
+      "winnerId": "member-1",
+      "prizeCents": 6600,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T17:02:28.202Z",
+      "roundId": "cycle-3-round-5",
+      "winnerId": "member-1",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T17:02:42.679Z",
+      "roundId": "cycle-3-round-6",
+      "userId": "member-1",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T17:02:43.859Z",
+      "roundId": "cycle-3-round-6",
+      "userId": "member-2",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T17:02:44.748Z",
+      "roundId": "cycle-3-round-6",
+      "userId": "member-3",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T17:02:46.116Z",
+      "roundId": "cycle-3-round-6",
+      "userId": "member-4",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T17:02:46.854Z",
+      "roundId": "cycle-3-round-6",
+      "userId": "member-5",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "payment_confirmed_by_admin",
+      "at": "2026-11-08T17:02:47.668Z",
+      "roundId": "cycle-3-round-6",
+      "userId": "member-6",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Pagamento confirmado manualmente pelo administrador mestre."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:03:05.015Z",
+      "roundId": "cycle-3-round-6",
+      "requestedBy": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:03:22.595Z",
+      "roundId": "cycle-3-round-6",
+      "requestedBy": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:03:56.152Z",
+      "roundId": "cycle-3-round-6",
+      "requestedBy": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:04:17.045Z",
+      "roundId": "cycle-3-round-6",
+      "requestedBy": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:04:39.442Z",
+      "roundId": "cycle-3-round-6",
+      "requestedBy": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "participant_spin_recorded",
+      "at": "2026-11-08T17:05:17.207Z",
+      "roundId": "cycle-3-round-6",
+      "requestedBy": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "resultId": "member-2",
+      "details": "Giro individual registrado pelo servidor com selecao aleatoria segura."
+    },
+    {
+      "type": "draw_started",
+      "at": "2026-11-08T17:05:17.207Z",
+      "roundId": "cycle-3-round-6",
+      "winnerId": "member-2",
+      "prizeCents": 6600,
+      "details": "Ganhador definido automaticamente pela maior quantidade de ocorrencias nos seis giros."
+    },
+    {
+      "type": "draw_completed",
+      "at": "2026-11-08T17:05:21.771Z",
+      "roundId": "cycle-3-round-6",
+      "winnerId": "member-2",
+      "details": "Resultado confirmado pelo servidor."
+    },
+    {
+      "type": "cycle_completed",
+      "at": "2026-11-08T17:05:21.771Z",
+      "cycleId": "cycle-3",
+      "details": "As seis rodadas do ciclo foram concluídas."
+    },
+    {
+      "type": "cycle_renewed",
+      "at": "2026-11-08T17:05:58.979Z",
+      "cycleId": "cycle-4",
+      "details": "Ciclo 4 iniciado pelo administrador."
+    },
+    {
+      "type": "pix_payment_settings_updated",
+      "at": "2026-11-08T17:28:30.841Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "details": "Dados de pagamento Pix atualizados pelo administrador mestre."
+    },
+    {
+      "type": "cycle_round_values_updated",
+      "at": "2026-11-08T17:57:58.141Z",
+      "actorUserId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "cycleId": "cycle-4",
+      "roundContributionCents": [
+        1000,
+        1100,
+        1100,
+        1100,
+        1100,
+        1100
+      ],
+      "details": "Valores das contribuicoes atualizados pelo administrador mestre."
+    }
+  ],
+  "authUsers": [
+    {
+      "id": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "participantId": null,
+      "role": "admin",
+      "name": "Administrador Mestre",
+      "email": "ericksanttos81@gmail.com",
+      "passwordSalt": "7c867faeab9619e535f41c067efe219d",
+      "passwordHash": "a8dddf9427076b5ae69d126330115bffb0db0899fcce0616c93b68002c49c8df",
+      "createdAt": "2026-11-06T00:18:23.470Z"
+    },
+    {
+      "id": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "role": "participant",
+      "name": "Leidiane",
+      "email": "jp2010066@gmail.com",
+      "passwordSalt": "9189bee926ddba970e604e155a0f3532",
+      "passwordHash": "ce938a8e3388cb3040b6a82821128f268725689beb725aadf50831d72a8405fd",
+      "createdAt": "2026-11-06T00:20:36.775Z"
+    },
+    {
+      "id": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "role": "participant",
+      "name": "Lucas",
+      "email": "kaycknicolas7@gmail.com",
+      "passwordSalt": "73819203af2278c853ab9623d4bb3c90",
+      "passwordHash": "5c68a766960da715fac098791d8357fa69f9e1df359b6b685e82bea2a3314ce3",
+      "createdAt": "2026-11-06T01:40:15.236Z"
+    },
+    {
+      "id": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "role": "participant",
+      "name": "Levi",
+      "email": "lucaslevilevi@gmail.com",
+      "passwordSalt": "0c2e8ef71c9e606c39b2b4d79d9da231",
+      "passwordHash": "eeec3636fc9bec5cb5f673af94677fef8c5e82d37ed56e6ba417bd77bf3004bb",
+      "createdAt": "2026-11-07T21:33:31.021Z"
+    },
+    {
+      "id": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "role": "participant",
+      "name": "Antonio",
+      "email": "salomaoalves933@gmail.com",
+      "passwordSalt": "2438976ad2e0c4055933366b5fe273b5",
+      "passwordHash": "ad26b89f9c2556ef870dbb19bc59ff652b3cc9434762aae017fa3d849c7f4281",
+      "createdAt": "2026-11-07T21:38:36.640Z"
+    },
+    {
+      "id": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "role": "participant",
+      "name": "denize",
+      "email": "mcebimar@gmail.com",
+      "passwordSalt": "56bac9bf220512670033ef716be2e2a6",
+      "passwordHash": "bfd888b159f6ecb42f24a04aa9087ca018b60e8f79c991dd91d08e34c2161add",
+      "createdAt": "2026-11-07T21:41:34.392Z"
+    },
+    {
+      "id": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "role": "participant",
+      "name": "Erick",
+      "email": "lucaslevirgabriel@gmail.com",
+      "passwordSalt": "5e504a25eca9230151fd0b3edb68aae4",
+      "passwordHash": "a0580fd4c1efd1a4828872261bc9fe9600fc53a2a45d3fe2cc9d550c443e9191",
+      "createdAt": "2026-11-07T21:43:58.436Z"
+    }
+  ],
+  "sessions": [
+    {
+      "tokenHash": "4d4970c6a9aa544b3cd09e8a33ca6a98d1a49f79d45fe214f3c1113093711431",
+      "userId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "expiresAt": 1796747783376
+    },
+    {
+      "tokenHash": "32356bf2a7d165630f5d72dbe48f60a1cc5fd166a2d5aeb610b81ca92d096d70",
+      "userId": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "expiresAt": 1796749514053
+    }
+  ],
+  "wheelOrder": [
+    "member-1",
+    "member-2",
+    "member-3",
+    "member-4",
+    "member-5",
+    "member-6"
+  ],
+  "cycleHistory": [
+    {
+      "id": "demo-cycle",
+      "status": "completed",
+      "contributionCents": 1000,
+      "roundCount": 6,
+      "createdAt": "2026-11-05T22:08:56.441Z",
+      "number": 1,
+      "completedAt": "2026-11-07T23:32:21.931Z"
+    },
+    {
+      "id": "cycle-2",
+      "number": 2,
+      "status": "completed",
+      "contributionCents": 1000,
+      "roundCount": 6,
+      "createdAt": "2026-11-08T00:05:10.684Z",
+      "completedAt": "2026-11-08T01:18:44.059Z"
+    },
+    {
+      "id": "cycle-3",
+      "number": 3,
+      "status": "completed",
+      "contributionCents": 1000,
+      "roundContributionCents": [
+        1000,
+        1100,
+        1100,
+        1100,
+        1100,
+        1100
+      ],
+      "roundCount": 6,
+      "createdAt": "2026-11-08T16:06:12.566Z",
+      "completedAt": "2026-11-08T17:05:21.771Z"
+    }
+  ],
+  "pixPayment": {
+    "copyPaste": "00020101021226810014br.gov.bcb.pix2559qr.woovi.com/qr/v2/cob/4a86db88-e82b-42d4-80f0-06a901dbe40a520400005303986540510.005802BR5909PUSHINPAY6011HORTOLANDIA62290525f0cf536850d64e7a851b52911630495E2",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021226810014br.gov.bcb.pix2559qr.woovi.com/qr/v2/cob/4a86db88-e82b-42d4-80f0-06a901dbe40a5204000053033986540510.005802BR5909PUSHINPAY6011HORTOLANDIA62290525f0cf536850d64e7a851b52911630495E2"
+  },
+  "deletedHistoryRoundIds": [
+    "cycle-2-round-6",
+    "cycle-2-round-5",
+    "cycle-2-round-4",
+    "cycle-2-round-3",
+    "cycle-2-round-2",
+    "cycle-2-round-1",
+    "round-6",
+    "round-5",
+    "round-4",
+    "round-3",
+    "round-2",
+    "round-1"
+  ]
+}

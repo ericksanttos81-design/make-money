@@ -1,0 +1,15 @@
+{
+  "name": "make-money",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MVP web para demonstracao de um ciclo coletivo de seis participantes",
+  "scripts": {
+    "start": "node server.js",
+    "reset": "node server.js --reset",
+    "admin:password": "node server.js --set-admin-password",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
