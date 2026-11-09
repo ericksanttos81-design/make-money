@@ -241,35 +241,71 @@ function writeState(filePath, state) {
   fs.renameSync(temporaryPath, filePath);
 }
 
+function isRecord(value) {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
+}
+
 function normalizeState(parsed, filePath, persist = () => {}) {
-  if (parsed.version !== 1 || !Array.isArray(parsed.participants) || !Array.isArray(parsed.rounds)) {
+  if (!isRecord(parsed)) parsed = {};
+  if (parsed.version !== undefined && parsed.version !== 1) {
     throw new Error(`O arquivo de dados do Make Money esta invalido: ${filePath}`);
   }
 
-  parsed.authUsers ||= [];
-  parsed.sessions ||= [];
-  parsed.cycleHistory ||= [];
+  const defaults = createInitialState();
+  parsed = {
+    ...defaults,
+    ...parsed,
+    version: 1,
+    cycle: isRecord(parsed.cycle) ? { ...defaults.cycle, ...parsed.cycle } : { ...defaults.cycle },
+    participants: Array.isArray(parsed.participants)
+      ? parsed.participants.filter(isRecord)
+      : defaults.participants,
+    rounds: Array.isArray(parsed.rounds) ? parsed.rounds.filter(isRecord) : [],
+    authUsers: Array.isArray(parsed.authUsers) ? parsed.authUsers.filter(isRecord) : [],
+    sessions: Array.isArray(parsed.sessions) ? parsed.sessions.filter(isRecord) : [],
+    cycleHistory: Array.isArray(parsed.cycleHistory) ? parsed.cycleHistory.filter(isRecord) : [],
+    audit: Array.isArray(parsed.audit) ? parsed.audit.filter(isRecord) : [],
+    pixPayment: isRecord(parsed.pixPayment)
+      ? { ...defaults.pixPayment, ...parsed.pixPayment }
+      : { ...defaults.pixPayment }
+  };
   parsed.deletedHistoryRoundIds = Array.isArray(parsed.deletedHistoryRoundIds)
     ? [...new Set(parsed.deletedHistoryRoundIds.filter((roundId) => typeof roundId === "string"))]
     : [];
-  parsed.pixPayment ||= { copyPaste: "", qrCodeUrl: "" };
   parsed.pixPayment.copyPaste = typeof parsed.pixPayment.copyPaste === "string" ? parsed.pixPayment.copyPaste : "";
   parsed.pixPayment.qrCodeUrl = typeof parsed.pixPayment.qrCodeUrl === "string" ? parsed.pixPayment.qrCodeUrl : "";
-  parsed.cycle.number ||= 1;
+  if (!Number.isSafeInteger(parsed.cycle.number) || parsed.cycle.number < 1) parsed.cycle.number = defaults.cycle.number;
+  if (!Number.isSafeInteger(parsed.cycle.roundCount)
+    || parsed.cycle.roundCount < 1
+    || parsed.cycle.roundCount > MEMBERS.length) {
+    parsed.cycle.roundCount = defaults.cycle.roundCount;
+  }
+  if (typeof parsed.cycle.id !== "string" || !parsed.cycle.id) parsed.cycle.id = defaults.cycle.id;
+  if (!Number.isSafeInteger(parsed.cycle.contributionCents) || parsed.cycle.contributionCents <= 0) {
+    parsed.cycle.contributionCents = defaults.cycle.contributionCents;
+  }
   const currentCycleRounds = parsed.rounds.filter((round) => round.cycleId === parsed.cycle.id);
   if (!Array.isArray(parsed.cycle.roundContributionCents)
+    || parsed.cycle.roundContributionCents.length === 0
     || parsed.cycle.roundContributionCents.length !== parsed.cycle.roundCount
     || parsed.cycle.roundContributionCents.some((amount) => !Number.isSafeInteger(amount) || amount <= 0)) {
     parsed.cycle.roundContributionCents = Array.from({ length: parsed.cycle.roundCount }, (_, index) => {
       const round = currentCycleRounds.find((item) => item.number === index + 1);
-      const amount = round?.payments?.[0]?.amountCents;
+      const firstPayment = Array.isArray(round?.payments) ? round.payments.find(isRecord) : null;
+      const amount = firstPayment?.amountCents;
       return Number.isSafeInteger(amount) && amount > 0
         ? amount
         : parsed.cycle.contributionCents;
     });
   }
   parsed.cycle.contributionCents = parsed.cycle.roundContributionCents[0];
+  const hasAllConfirmedPayments = (round) =>
+    round.payments.length > 0
+    && round.payments.length === parsed.participants.length
+    && round.payments.every((payment) => payment.status === "confirmed" && payment.adminConfirmed);
   for (const round of parsed.rounds) {
+    if (!Array.isArray(round.spins)) round.spins = [];
+    if (!Array.isArray(round.tiedParticipantIds)) round.tiedParticipantIds = [];
     round.cycleId ||= parsed.cycle.id;
     round.cycleNumber ||= parsed.cycle.number;
   }
@@ -281,19 +317,22 @@ function normalizeState(parsed, filePath, persist = () => {}) {
   ];
   let recovered = false;
   for (const round of parsed.rounds) {
-    if (!Array.isArray(round.spins)) round.spins = [];
-    if (!Array.isArray(round.tiedParticipantIds)) round.tiedParticipantIds = [];
     if (!Number.isInteger(round.tieCount) || round.tieCount < 0) {
       round.tieCount = 0;
       recovered = true;
     }
+    if (!Array.isArray(round.payments)) {
+      round.payments = [];
+      recovered = true;
+    }
+    round.payments = round.payments.filter(isRecord);
     for (const payment of round.payments) {
       if (typeof payment.adminConfirmed !== "boolean") {
         payment.adminConfirmed = false;
         recovered = true;
       }
     }
-    if (round.status === "ready" && !round.payments.every((payment) => payment.status === "confirmed" && payment.adminConfirmed)) {
+    if (round.status === "ready" && !hasAllConfirmedPayments(round)) {
       round.status = "open";
       recovered = true;
     }
@@ -309,7 +348,7 @@ function normalizeState(parsed, filePath, persist = () => {}) {
         spins: round.spins.map((spin) => ({ ...spin })),
         details: "Empate recuperado de uma versao anterior; os giros foram reiniciados automaticamente."
       });
-      round.status = round.payments.every((payment) => payment.status === "confirmed" && payment.adminConfirmed)
+      round.status = hasAllConfirmedPayments(round)
         ? "ready"
         : "open";
       round.winnerId = null;
