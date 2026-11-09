@@ -2,8 +2,10 @@ const crypto = require("node:crypto");
 const fs = require("node:fs");
 const http = require("node:http");
 const path = require("node:path");
+const { createClient } = require("@supabase/supabase-js");
 
 const PORT = Number(process.env.PORT) || 3000;
+const APP_VERSION = require("./package.json").version;
 const DEFAULT_DATA_FILE = path.join(__dirname, "data", "make-money.json");
 const DRAW_DURATION_MS = Number(process.env.DRAW_DURATION_MS) || 4500;
 const SESSION_COOKIE = "mm_session";
@@ -152,6 +154,36 @@ function setMasterAdminPassword(password, options = {}) {
     throw new Error("A senha precisa conter entre 1 e 128 caracteres.");
   }
   const filePath = options.dataFile || DEFAULT_DATA_FILE;
+  const supabaseUrl = options.supabaseUrl || process.env.SUPABASE_URL;
+  const supabaseServiceRoleKey = options.supabaseServiceRoleKey || process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!options.supabaseClient && Boolean(supabaseUrl) !== Boolean(supabaseServiceRoleKey)) {
+    throw new Error("Configure SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY para habilitar a persistencia no Supabase.");
+  }
+  if (!options.supabaseClient && supabaseServiceRoleKey?.startsWith("sb_publishable_")) {
+    throw new Error("SUPABASE_SERVICE_ROLE_KEY precisa ser uma chave secreta de servidor, nao uma chave publishable.");
+  }
+  if (options.supabaseClient || supabaseUrl) {
+    return (async () => {
+      const supabase = options.supabaseClient || createClient(supabaseUrl, supabaseServiceRoleKey, {
+        auth: { autoRefreshToken: false, persistSession: false }
+      });
+      const { data, error } = await supabase.from("app_state").select("payload").eq("id", "main").maybeSingle();
+      if (error) throw new Error(`Falha ao carregar os dados do Supabase: ${error.message}`);
+      const state = data
+        ? normalizeState(data.payload, "Supabase app_state")
+        : fs.existsSync(filePath) ? readState(filePath) : createInitialState();
+      ensureMasterAdmin(state, {
+        adminEmail: options.adminEmail,
+        adminPassword: password
+      });
+      const { error: saveError } = await supabase.from("app_state").upsert({
+        id: "main",
+        payload: state,
+        updated_at: new Date().toISOString()
+      });
+      if (saveError) throw new Error(`Falha ao salvar os dados no Supabase: ${saveError.message}`);
+    })();
+  }
   const state = readState(filePath);
   ensureMasterAdmin(state, {
     adminEmail: options.adminEmail,
@@ -209,14 +241,7 @@ function writeState(filePath, state) {
   fs.renameSync(temporaryPath, filePath);
 }
 
-function readState(filePath) {
-  if (!fs.existsSync(filePath)) {
-    const initial = createInitialState();
-    writeState(filePath, initial);
-    return initial;
-  }
-
-  const parsed = JSON.parse(fs.readFileSync(filePath, "utf8"));
+function normalizeState(parsed, filePath, persist = () => {}) {
   if (parsed.version !== 1 || !Array.isArray(parsed.participants) || !Array.isArray(parsed.rounds)) {
     throw new Error(`O arquivo de dados do Make Money esta invalido: ${filePath}`);
   }
@@ -311,9 +336,19 @@ function readState(filePath) {
   if (completeCurrentCycle(parsed)) recovered = true;
   if (recovered) {
     openNextRound(parsed);
-    writeState(filePath, parsed);
+    persist(filePath, parsed);
   }
   return parsed;
+}
+
+function readState(filePath) {
+  if (!fs.existsSync(filePath)) {
+    const initial = createInitialState();
+    writeState(filePath, initial);
+    return initial;
+  }
+
+  return normalizeState(JSON.parse(fs.readFileSync(filePath, "utf8")), filePath, writeState);
 }
 
 function openNextRound(state) {
@@ -526,17 +561,74 @@ function createApp(options = {}) {
   const sendResetCodeEmail = options.sendResetCodeEmail || sendResetEmailWithResend;
   const resetCodeSecret = options.resetCodeSecret || process.env.PASSWORD_RESET_SECRET || process.env.RESEND_API_KEY;
   const now = options.now || Date.now;
-  const state = readState(filePath);
-  state.sessions = state.sessions.filter((session) => session.expiresAt > Date.now());
+  const supabaseUrl = options.supabaseUrl || process.env.SUPABASE_URL;
+  const supabaseServiceRoleKey = options.supabaseServiceRoleKey || process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!options.supabaseClient && Boolean(supabaseUrl) !== Boolean(supabaseServiceRoleKey)) {
+    throw new Error("Configure SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY para habilitar a persistencia no Supabase.");
+  }
+  if (!options.supabaseClient && supabaseServiceRoleKey?.startsWith("sb_publishable_")) {
+    throw new Error("SUPABASE_SERVICE_ROLE_KEY precisa ser uma chave secreta de servidor, nao uma chave publishable.");
+  }
+  const supabase = options.supabaseClient || (supabaseUrl
+    ? createClient(supabaseUrl, supabaseServiceRoleKey, {
+      auth: { autoRefreshToken: false, persistSession: false }
+    })
+    : null);
+  const state = supabase ? createInitialState() : readState(filePath);
   const clients = new Map();
   const drawTimers = new Map();
   const resetRequestTimes = new Map();
   let closed = false;
-  ensureMasterAdmin(state, options);
-  writeState(filePath, state);
+  let persistenceQueue = Promise.resolve();
 
-  function persistAndBroadcast() {
-    writeState(filePath, state);
+  function saveState() {
+    const snapshot = structuredClone(state);
+    const persist = async () => {
+      if (!supabase) {
+        writeState(filePath, snapshot);
+        return;
+      }
+      const { error } = await supabase.from("app_state").upsert({
+        id: "main",
+        payload: snapshot,
+        updated_at: new Date().toISOString()
+      });
+      if (error) throw new Error(`Falha ao salvar os dados no Supabase: ${error.message}`);
+    };
+    const pending = persistenceQueue.then(persist);
+    persistenceQueue = pending.catch(() => {});
+    return pending;
+  }
+
+  async function initializeState() {
+    if (supabase) {
+      const { data, error } = await supabase
+        .from("app_state")
+        .select("payload")
+        .eq("id", "main")
+        .maybeSingle();
+      if (error) throw new Error(`Falha ao carregar os dados do Supabase: ${error.message}`);
+
+      const initialState = data
+        ? normalizeState(data.payload, "Supabase app_state")
+        : fs.existsSync(filePath) ? readState(filePath) : createInitialState();
+      for (const key of Object.keys(state)) delete state[key];
+      Object.assign(state, initialState);
+    }
+    state.sessions = state.sessions.filter((session) => session.expiresAt > Date.now());
+    ensureMasterAdmin(state, options);
+    await saveState();
+    for (const round of state.rounds) {
+      if (round.status !== "drawing" || drawTimers.has(round.id)) continue;
+      const remaining = Math.max(0, drawDurationMs - (Date.now() - Date.parse(round.drawStartedAt)));
+      scheduleDrawCompletion(round.id, remaining);
+    }
+  }
+
+  const ready = initializeState();
+
+  async function persistAndBroadcast() {
+    await saveState();
     for (const [client, context] of clients) {
       if (client.destroyed) continue;
       const sessionIsActive = state.sessions.some((session) =>
@@ -591,10 +683,11 @@ function createApp(options = {}) {
     };
   }
 
-  function setSessionCookie(response, token, request) {
+  function setSessionCookie(response, token, request, rememberMe) {
     const secure = Boolean(request.socket.encrypted);
+    const maxAge = rememberMe ? `; Max-Age=${SESSION_LIFETIME_MS / 1000}` : "";
     response.setHeader("Set-Cookie",
-      `${SESSION_COOKIE}=${encodeURIComponent(token)}; Path=/; HttpOnly; SameSite=Strict; Max-Age=${SESSION_LIFETIME_MS / 1000}${secure ? "; Secure" : ""}`);
+      `${SESSION_COOKIE}=${encodeURIComponent(token)}; Path=/; HttpOnly; SameSite=Strict${maxAge}${secure ? "; Secure" : ""}`);
   }
 
   function clearSessionCookie(response, request) {
@@ -603,7 +696,7 @@ function createApp(options = {}) {
       `${SESSION_COOKIE}=; Path=/; HttpOnly; SameSite=Strict; Max-Age=0${secure ? "; Secure" : ""}`);
   }
 
-  function createSession(user, request, response) {
+  async function createSession(user, request, response, rememberMe = false) {
     const token = crypto.randomBytes(32).toString("base64url");
     const session = {
       tokenHash: crypto.createHash("sha256").update(token).digest("hex"),
@@ -618,8 +711,8 @@ function createApp(options = {}) {
       }
     }
     state.sessions.push(session);
-    writeState(filePath, state);
-    setSessionCookie(response, token, request);
+    await saveState();
+    setSessionCookie(response, token, request, rememberMe);
     sendJson(response, 200, { user: publicUser(user) });
   }
 
@@ -647,7 +740,7 @@ function createApp(options = {}) {
     return crypto.timingSafeEqual(Buffer.from(left, "hex"), Buffer.from(right, "hex"));
   }
 
-  function finishDraw(roundId) {
+  async function finishDraw(roundId) {
     const round = state.rounds.find((item) => item.id === roundId);
     if (!round || round.status !== "drawing") return;
     round.status = "completed";
@@ -661,17 +754,27 @@ function createApp(options = {}) {
     });
     if (!completeCurrentCycle(state)) openNextRound(state);
     drawTimers.delete(roundId);
-    persistAndBroadcast();
+    await persistAndBroadcast();
+  }
+
+  function scheduleDrawCompletion(roundId, delay) {
+    drawTimers.set(roundId, setTimeout(() => {
+      finishDraw(roundId).catch((error) => console.error("Falha ao persistir o resultado do sorteio:", error));
+    }, delay));
   }
 
   for (const round of state.rounds) {
     if (round.status === "drawing") {
       const remaining = Math.max(0, drawDurationMs - (Date.now() - Date.parse(round.drawStartedAt)));
-      drawTimers.set(round.id, setTimeout(() => finishDraw(round.id), remaining));
+      scheduleDrawCompletion(round.id, remaining);
     }
   }
 
   async function handleApi(request, response, pathname) {
+    if (request.method === "GET" && pathname === "/api/version") {
+      return sendJson(response, 200, { version: APP_VERSION });
+    }
+
     if (request.method === "GET" && pathname === "/api/auth/session") {
       const current = findSession(request);
       return sendJson(response, 200, {
@@ -711,8 +814,8 @@ function createApp(options = {}) {
         userId: admin.id,
         details: "Senha inicial do administrador configurada pelo navegador local."
       });
-      persistAndBroadcast();
-      return createSession(admin, request, response);
+      await persistAndBroadcast();
+      return await createSession(admin, request, response);
     }
 
     if (request.method === "POST" && (pathname === "/api/auth/password-reset/request" || pathname === "/api/auth/password-reset/confirm")) {
@@ -757,7 +860,7 @@ function createApp(options = {}) {
           expiresAt: nowTimestamp + RESET_CODE_LIFETIME_MS,
           attemptsRemaining: RESET_CODE_MAX_ATTEMPTS
         };
-        writeState(filePath, state);
+        await saveState();
         return sendJson(response, 200, {
           message: "Se o e-mail estiver cadastrado, enviaremos um codigo de recuperacao."
         });
@@ -777,7 +880,7 @@ function createApp(options = {}) {
       const reset = user?.passwordReset;
       if (!user || !reset || reset.expiresAt <= now() || reset.attemptsRemaining <= 0) {
         if (user && reset?.expiresAt <= now()) delete user.passwordReset;
-        writeState(filePath, state);
+        await saveState();
         return sendJson(response, 400, { error: "Codigo invalido ou expirado. Solicite um novo codigo." });
       }
 
@@ -785,7 +888,7 @@ function createApp(options = {}) {
       if (!constantTimeHexEquals(submittedCodeHash, reset.codeHash)) {
         reset.attemptsRemaining -= 1;
         if (reset.attemptsRemaining <= 0) delete user.passwordReset;
-        writeState(filePath, state);
+        await saveState();
         return sendJson(response, 400, {
           error: reset.attemptsRemaining > 0
             ? `Codigo incorreto. Restam ${reset.attemptsRemaining} tentativas.`
@@ -811,7 +914,7 @@ function createApp(options = {}) {
         userId: user.id,
         details: "Senha redefinida com codigo de recuperacao por e-mail."
       });
-      writeState(filePath, state);
+      await saveState();
       return sendJson(response, 200, { message: "Senha alterada. Entre com sua nova senha." });
     }
 
@@ -830,7 +933,7 @@ function createApp(options = {}) {
               client.end();
             }
           }
-          writeState(filePath, state);
+          await saveState();
         }
         clearSessionCookie(response, request);
         return sendJson(response, 200, { user: null });
@@ -895,8 +998,8 @@ function createApp(options = {}) {
           participantId: participant.id,
           details: "Conta de participante criada."
         });
-        persistAndBroadcast();
-        return createSession(user, request, response);
+        await persistAndBroadcast();
+        return await createSession(user, request, response);
       }
 
       const user = state.authUsers.find((item) => item.email === email);
@@ -908,7 +1011,7 @@ function createApp(options = {}) {
       if (!user || submittedHash.length !== storedHash.length || !crypto.timingSafeEqual(submittedHash, storedHash)) {
         return sendJson(response, 401, { error: "E-mail ou senha incorretos." });
       }
-      return createSession(user, request, response);
+      return await createSession(user, request, response, body.rememberMe === true || body.rememberMe === "on");
     }
 
     const current = findSession(request);
@@ -959,7 +1062,7 @@ function createApp(options = {}) {
         roundId,
         details: `Registro do sorteio do ciclo ${round.cycleNumber}, mes ${round.number}, removido do historico pelo administrador.`
       });
-      persistAndBroadcast();
+      await persistAndBroadcast();
       return sendJson(response, 200, getPublicState(state));
     }
 
@@ -1019,7 +1122,7 @@ function createApp(options = {}) {
         roundContributionCents: [...amounts],
         details: "Valores das contribuicoes atualizados pelo administrador mestre."
       });
-      persistAndBroadcast();
+      await persistAndBroadcast();
       return sendJson(response, 200, getPublicState(state));
     }
 
@@ -1059,7 +1162,7 @@ function createApp(options = {}) {
         actorUserId: current.user.id,
         details: "Dados de pagamento Pix atualizados pelo administrador mestre."
       });
-      persistAndBroadcast();
+      await persistAndBroadcast();
       return sendJson(response, 200, getPublicState(state));
     }
 
@@ -1099,7 +1202,7 @@ function createApp(options = {}) {
         actorUserId: current.user.id,
         details: "Conta e perfil do participante removidos pelo administrador mestre."
       });
-      persistAndBroadcast();
+      await persistAndBroadcast();
       return sendJson(response, 200, {
         ...getPublicState(state),
         participantAccounts: state.authUsers
@@ -1120,7 +1223,7 @@ function createApp(options = {}) {
       if (!startNextCycle(state)) {
         return sendJson(response, 409, { error: "O ciclo atual ainda nao foi concluido." });
       }
-      persistAndBroadcast();
+      await persistAndBroadcast();
       return sendJson(response, 200, getPublicState(state));
     }
 
@@ -1182,7 +1285,7 @@ function createApp(options = {}) {
           changes: changedParticipants,
           details: "Nome ou posicao da fatia da roleta atualizado pelo administrador mestre."
         });
-        persistAndBroadcast();
+        await persistAndBroadcast();
       }
       return sendJson(response, 200, getPublicState(state));
     }
@@ -1238,7 +1341,7 @@ function createApp(options = {}) {
           actorUserId: current.user.id,
           details: "Ganhador oficial da rodada concluida atualizado pelo administrador mestre."
         });
-        persistAndBroadcast();
+        await persistAndBroadcast();
       }
       return sendJson(response, 200, getPublicState(state));
     }
@@ -1274,7 +1377,7 @@ function createApp(options = {}) {
           ? "Pagamento confirmado manualmente pelo administrador mestre."
           : "Pagamento marcado como pendente pelo administrador mestre."
       });
-      persistAndBroadcast();
+      await persistAndBroadcast();
       return sendJson(response, 200, getPublicState(state));
     }
 
@@ -1324,7 +1427,7 @@ function createApp(options = {}) {
         });
       }
       round.status = round.payments.every((item) => item.status === "confirmed" && item.adminConfirmed) ? "ready" : "open";
-      persistAndBroadcast();
+      await persistAndBroadcast();
       return sendJson(response, 200, getPublicState(state));
     }
 
@@ -1420,9 +1523,9 @@ function createApp(options = {}) {
           round.tiedParticipantIds = [];
         }
       }
-      persistAndBroadcast();
+      await persistAndBroadcast();
       if (round.status === "drawing") {
-        drawTimers.set(roundId, setTimeout(() => finishDraw(roundId), drawDurationMs));
+        scheduleDrawCompletion(roundId, drawDurationMs);
       }
       return sendJson(response, 202, getPublicState(state));
     }
@@ -1441,6 +1544,7 @@ function createApp(options = {}) {
 
   const server = http.createServer(async (request, response) => {
     try {
+      await ready;
       const url = new URL(request.url, `http://${request.headers.host || "localhost"}`);
       if (url.pathname.startsWith("/api/")) {
         return await handleApi(request, response, url.pathname);
@@ -1458,6 +1562,9 @@ function createApp(options = {}) {
         contents = fs.readFileSync(filePathToServe);
       } catch {
         return sendJson(response, 404, { error: "Arquivo nao encontrado." });
+      }
+      if (requestedPath === "/index.html") {
+        contents = Buffer.from(contents.toString("utf8").replace("__APP_VERSION__", APP_VERSION));
       }
       response.writeHead(200, {
         "Content-Type": contentTypes[path.extname(filePathToServe)] || "application/octet-stream",
@@ -1484,7 +1591,7 @@ function createApp(options = {}) {
     clients.clear();
   });
 
-  return { server, close: () => { if (!closed) server.close(); } };
+  return { server, ready, close: () => { if (!closed) server.close(); } };
 }
 
 if (require.main === module) {
@@ -1496,15 +1603,16 @@ if (require.main === module) {
       const password = await promptHidden("Nova senha do Administrador Mestre: ");
       const confirmation = await promptHidden("Confirme a nova senha: ");
       if (password !== confirmation) throw new Error("As senhas nao conferem. Nenhuma alteracao foi salva.");
-      setMasterAdminPassword(password);
-      console.log("Senha do Administrador Mestre atualizada. O hash foi salvo no arquivo de dados.");
+      await setMasterAdminPassword(password);
+      console.log("Senha do Administrador Mestre atualizada no armazenamento configurado.");
       return;
     }
 
     const app = createApp();
+    await app.ready;
     app.server.listen(PORT, () => {
       console.log(`Make Money disponivel em http://localhost:${PORT}`);
-      console.log("Autenticacao local ativa. Confirmacoes de pagamento continuam sendo demonstrativas.");
+      console.log(`${process.env.SUPABASE_SERVICE_ROLE_KEY ? "Persistencia Supabase ativa." : "Persistencia local ativa."} Confirmacoes de pagamento continuam sendo demonstrativas.`);
     });
   }
 
