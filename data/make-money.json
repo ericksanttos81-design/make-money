@@ -16,6 +16,57 @@
     "roundCount": 6,
     "createdAt": "2026-11-08T17:05:58.979Z"
   },
+  "cycleHistory": [
+    {
+      "id": "demo-cycle",
+      "status": "completed",
+      "contributionCents": 1000,
+      "roundCount": 6,
+      "createdAt": "2026-11-05T22:08:56.441Z",
+      "number": 1,
+      "completedAt": "2026-11-07T23:32:21.931Z"
+    },
+    {
+      "id": "cycle-2",
+      "number": 2,
+      "status": "completed",
+      "contributionCents": 1000,
+      "roundCount": 6,
+      "createdAt": "2026-11-08T00:05:10.684Z",
+      "completedAt": "2026-11-08T01:18:44.059Z"
+    },
+    {
+      "id": "cycle-3",
+      "number": 3,
+      "status": "completed",
+      "contributionCents": 1000,
+      "roundContributionCents": [
+        1000,
+        1100,
+        1100,
+        1100,
+        1100,
+        1100
+      ],
+      "roundCount": 6,
+      "createdAt": "2026-11-08T16:06:12.566Z",
+      "completedAt": "2026-11-08T17:05:21.771Z"
+    }
+  ],
+  "deletedHistoryRoundIds": [
+    "cycle-2-round-6",
+    "cycle-2-round-5",
+    "cycle-2-round-4",
+    "cycle-2-round-3",
+    "cycle-2-round-2",
+    "cycle-2-round-1",
+    "round-6",
+    "round-5",
+    "round-4",
+    "round-3",
+    "round-2",
+    "round-1"
+  ],
   "participants": [
     {
       "id": "member-1",
@@ -47,6 +98,14 @@
       "name": "Erick",
       "status": "active"
     }
+  ],
+  "wheelOrder": [
+    "member-1",
+    "member-2",
+    "member-3",
+    "member-4",
+    "member-5",
+    "member-6"
   ],
   "rounds": [
     {
@@ -1876,6 +1935,83 @@
       ]
     }
   ],
+  "authUsers": [
+    {
+      "id": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
+      "participantId": null,
+      "role": "admin",
+      "name": "Administrador Mestre",
+      "email": "ericksanttos81@gmail.com",
+      "passwordSalt": "7c867faeab9619e535f41c067efe219d",
+      "passwordHash": "a8dddf9427076b5ae69d126330115bffb0db0899fcce0616c93b68002c49c8df",
+      "createdAt": "2026-11-06T00:18:23.470Z"
+    },
+    {
+      "id": "22a34477-41fe-408a-96f2-17b097263de0",
+      "participantId": "member-1",
+      "role": "participant",
+      "name": "Leidiane",
+      "email": "jp2010066@gmail.com",
+      "passwordSalt": "9189bee926ddba970e604e155a0f3532",
+      "passwordHash": "ce938a8e3388cb3040b6a82821128f268725689beb725aadf50831d72a8405fd",
+      "createdAt": "2026-11-06T00:20:36.775Z"
+    },
+    {
+      "id": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "participantId": "member-2",
+      "role": "participant",
+      "name": "Lucas",
+      "email": "kaycknicolas7@gmail.com",
+      "passwordSalt": "73819203af2278c853ab9623d4bb3c90",
+      "passwordHash": "5c68a766960da715fac098791d8357fa69f9e1df359b6b685e82bea2a3314ce3",
+      "createdAt": "2026-11-06T01:40:15.236Z"
+    },
+    {
+      "id": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
+      "participantId": "member-3",
+      "role": "participant",
+      "name": "Levi",
+      "email": "lucaslevilevi@gmail.com",
+      "passwordSalt": "0c2e8ef71c9e606c39b2b4d79d9da231",
+      "passwordHash": "eeec3636fc9bec5cb5f673af94677fef8c5e82d37ed56e6ba417bd77bf3004bb",
+      "createdAt": "2026-11-07T21:33:31.021Z"
+    },
+    {
+      "id": "b62a455e-edad-40b1-9776-564515fcd259",
+      "participantId": "member-4",
+      "role": "participant",
+      "name": "Antonio",
+      "email": "salomaoalves933@gmail.com",
+      "passwordSalt": "2438976ad2e0c4055933366b5fe273b5",
+      "passwordHash": "ad26b89f9c2556ef870dbb19bc59ff652b3cc9434762aae017fa3d849c7f4281",
+      "createdAt": "2026-11-07T21:38:36.640Z"
+    },
+    {
+      "id": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
+      "participantId": "member-5",
+      "role": "participant",
+      "name": "denize",
+      "email": "mcebimar@gmail.com",
+      "passwordSalt": "56bac9bf220512670033ef716be2e2a6",
+      "passwordHash": "bfd888b159f6ecb42f24a04aa9087ca018b60e8f79c991dd91d08e34c2161add",
+      "createdAt": "2026-11-07T21:41:34.392Z"
+    },
+    {
+      "id": "717a2175-e501-494a-bcd3-4a80f6130a06",
+      "participantId": "member-6",
+      "role": "participant",
+      "name": "Erick",
+      "email": "lucaslevirgabriel@gmail.com",
+      "passwordSalt": "5e504a25eca9230151fd0b3edb68aae4",
+      "passwordHash": "a0580fd4c1efd1a4828872261bc9fe9600fc53a2a45d3fe2cc9d550c443e9191",
+      "createdAt": "2026-11-07T21:43:58.436Z"
+    }
+  ],
+  "sessions": [],
+  "pixPayment": {
+    "copyPaste": "00020101021226810014br.gov.bcb.pix2559qr.woovi.com/qr/v2/cob/4a86db88-e82b-42d4-80f0-06a901dbe40a520400005303986540510.005802BR5909PUSHINPAY6011HORTOLANDIA62290525f0cf536850d64e7a851b52911630495E2",
+    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021226810014br.gov.bcb.pix2559qr.woovi.com/qr/v2/cob/4a86db88-e82b-42d4-80f0-06a901dbe40a5204000053033986540510.005802BR5909PUSHINPAY6011HORTOLANDIA62290525f0cf536850d64e7a851b52911630495E2"
+  },
   "audit": [
     {
       "type": "cycle_created",
@@ -4927,152 +5063,5 @@
       ],
       "details": "Valores das contribuicoes atualizados pelo administrador mestre."
     }
-  ],
-  "authUsers": [
-    {
-      "id": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
-      "participantId": null,
-      "role": "admin",
-      "name": "Administrador Mestre",
-      "email": "ericksanttos81@gmail.com",
-      "passwordSalt": "7c867faeab9619e535f41c067efe219d",
-      "passwordHash": "a8dddf9427076b5ae69d126330115bffb0db0899fcce0616c93b68002c49c8df",
-      "createdAt": "2026-11-06T00:18:23.470Z"
-    },
-    {
-      "id": "22a34477-41fe-408a-96f2-17b097263de0",
-      "participantId": "member-1",
-      "role": "participant",
-      "name": "Leidiane",
-      "email": "jp2010066@gmail.com",
-      "passwordSalt": "9189bee926ddba970e604e155a0f3532",
-      "passwordHash": "ce938a8e3388cb3040b6a82821128f268725689beb725aadf50831d72a8405fd",
-      "createdAt": "2026-11-06T00:20:36.775Z"
-    },
-    {
-      "id": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
-      "participantId": "member-2",
-      "role": "participant",
-      "name": "Lucas",
-      "email": "kaycknicolas7@gmail.com",
-      "passwordSalt": "73819203af2278c853ab9623d4bb3c90",
-      "passwordHash": "5c68a766960da715fac098791d8357fa69f9e1df359b6b685e82bea2a3314ce3",
-      "createdAt": "2026-11-06T01:40:15.236Z"
-    },
-    {
-      "id": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
-      "participantId": "member-3",
-      "role": "participant",
-      "name": "Levi",
-      "email": "lucaslevilevi@gmail.com",
-      "passwordSalt": "0c2e8ef71c9e606c39b2b4d79d9da231",
-      "passwordHash": "eeec3636fc9bec5cb5f673af94677fef8c5e82d37ed56e6ba417bd77bf3004bb",
-      "createdAt": "2026-11-07T21:33:31.021Z"
-    },
-    {
-      "id": "b62a455e-edad-40b1-9776-564515fcd259",
-      "participantId": "member-4",
-      "role": "participant",
-      "name": "Antonio",
-      "email": "salomaoalves933@gmail.com",
-      "passwordSalt": "2438976ad2e0c4055933366b5fe273b5",
-      "passwordHash": "ad26b89f9c2556ef870dbb19bc59ff652b3cc9434762aae017fa3d849c7f4281",
-      "createdAt": "2026-11-07T21:38:36.640Z"
-    },
-    {
-      "id": "0fecaf9d-006f-4fbc-9949-8d407d803cbb",
-      "participantId": "member-5",
-      "role": "participant",
-      "name": "denize",
-      "email": "mcebimar@gmail.com",
-      "passwordSalt": "56bac9bf220512670033ef716be2e2a6",
-      "passwordHash": "bfd888b159f6ecb42f24a04aa9087ca018b60e8f79c991dd91d08e34c2161add",
-      "createdAt": "2026-11-07T21:41:34.392Z"
-    },
-    {
-      "id": "717a2175-e501-494a-bcd3-4a80f6130a06",
-      "participantId": "member-6",
-      "role": "participant",
-      "name": "Erick",
-      "email": "lucaslevirgabriel@gmail.com",
-      "passwordSalt": "5e504a25eca9230151fd0b3edb68aae4",
-      "passwordHash": "a0580fd4c1efd1a4828872261bc9fe9600fc53a2a45d3fe2cc9d550c443e9191",
-      "createdAt": "2026-11-07T21:43:58.436Z"
-    }
-  ],
-  "sessions": [
-    {
-      "tokenHash": "77a3666479a61f923724b1d39006df4421a5a5545279de8564aad6b3b395020c",
-      "userId": "4c501a38-ff7b-4b8c-bac3-c567b43a224c",
-      "expiresAt": 1796773875340
-    },
-    {
-      "tokenHash": "304d18a7fab061ca216b92113c27987715bf1b39b0b2fc2f30fd988a9cdf9cbc",
-      "userId": "f713f72f-1037-4daa-bcc3-62ccfac1818e",
-      "expiresAt": 1796774832968
-    }
-  ],
-  "wheelOrder": [
-    "member-1",
-    "member-2",
-    "member-3",
-    "member-4",
-    "member-5",
-    "member-6"
-  ],
-  "cycleHistory": [
-    {
-      "id": "demo-cycle",
-      "status": "completed",
-      "contributionCents": 1000,
-      "roundCount": 6,
-      "createdAt": "2026-11-05T22:08:56.441Z",
-      "number": 1,
-      "completedAt": "2026-11-07T23:32:21.931Z"
-    },
-    {
-      "id": "cycle-2",
-      "number": 2,
-      "status": "completed",
-      "contributionCents": 1000,
-      "roundCount": 6,
-      "createdAt": "2026-11-08T00:05:10.684Z",
-      "completedAt": "2026-11-08T01:18:44.059Z"
-    },
-    {
-      "id": "cycle-3",
-      "number": 3,
-      "status": "completed",
-      "contributionCents": 1000,
-      "roundContributionCents": [
-        1000,
-        1100,
-        1100,
-        1100,
-        1100,
-        1100
-      ],
-      "roundCount": 6,
-      "createdAt": "2026-11-08T16:06:12.566Z",
-      "completedAt": "2026-11-08T17:05:21.771Z"
-    }
-  ],
-  "pixPayment": {
-    "copyPaste": "00020101021226810014br.gov.bcb.pix2559qr.woovi.com/qr/v2/cob/4a86db88-e82b-42d4-80f0-06a901dbe40a520400005303986540510.005802BR5909PUSHINPAY6011HORTOLANDIA62290525f0cf536850d64e7a851b52911630495E2",
-    "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021226810014br.gov.bcb.pix2559qr.woovi.com/qr/v2/cob/4a86db88-e82b-42d4-80f0-06a901dbe40a5204000053033986540510.005802BR5909PUSHINPAY6011HORTOLANDIA62290525f0cf536850d64e7a851b52911630495E2"
-  },
-  "deletedHistoryRoundIds": [
-    "cycle-2-round-6",
-    "cycle-2-round-5",
-    "cycle-2-round-4",
-    "cycle-2-round-3",
-    "cycle-2-round-2",
-    "cycle-2-round-1",
-    "round-6",
-    "round-5",
-    "round-4",
-    "round-3",
-    "round-2",
-    "round-1"
   ]
 }
