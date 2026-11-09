@@ -90,7 +90,10 @@ test("unlocks spins per approved payment, picks the majority, and restarts tied 
     assert.equal(adminLogin.status, 200);
     const adminUser = await adminLogin.json();
     assert.equal(adminUser.user.role, "admin");
-    const adminCookie = adminLogin.headers.get("set-cookie").split(";")[0];
+    const adminSetCookie = adminLogin.headers.get("set-cookie");
+    const adminCookie = adminSetCookie.split(";")[0];
+    assert.equal(adminSetCookie.includes("HttpOnly"), true);
+    assert.equal(adminSetCookie.includes("Max-Age"), false);
 
     const participantCannotOpenAdminPanel = await fetch(`${baseUrl}/api/admin/overview`);
     assert.equal(participantCannotOpenAdminPanel.status, 401);
@@ -389,13 +392,20 @@ test("unlocks spins per approved payment, picks the majority, and restarts tied 
 
     const login = await post("/api/auth/signin", {
       email: "member1@example.com",
-      password: "senha123"
+      password: "senha123",
+      rememberMe: true
     });
     assert.equal(login.status, 200);
-    const restoredCookie = login.headers.get("set-cookie").split(";")[0];
-    assert.equal(login.headers.get("set-cookie").includes("HttpOnly"), true);
-    assert.equal(login.headers.get("set-cookie").includes("SameSite=Strict"), true);
+    const loginSetCookie = login.headers.get("set-cookie");
+    const restoredCookie = loginSetCookie.split(";")[0];
+    assert.equal(loginSetCookie.includes("HttpOnly"), true);
+    assert.equal(loginSetCookie.includes("SameSite=Strict"), true);
+    assert.equal(loginSetCookie.includes("Max-Age=2592000"), true);
     assert.equal((await getState(restoredCookie)).participants.length, 6);
+    const restoredSession = await fetch(`${baseUrl}/api/auth/session`, {
+      headers: { Cookie: restoredCookie }
+    });
+    assert.equal((await restoredSession.json()).user.email, "member1@example.com");
 
     const unknownReset = await post("/api/auth/password-reset/request", { email: "unknown@example.com" });
     assert.equal(unknownReset.status, 200);
@@ -1325,4 +1335,189 @@ test("serves the sidebar logo as a PNG image", async () => {
     await new Promise((resolve) => app.server.close(resolve));
     fs.rmSync(temporaryDirectory, { recursive: true, force: true });
   }
+});
+
+test("serves the current app version without authentication and embeds it in the UI", async () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "make-money-version-test-"));
+  const app = createApp({
+    dataFile: path.join(temporaryDirectory, "state.json"),
+    adminEmail: "admin@example.com",
+    adminPassword: "MasterAdmin123!"
+  });
+  await new Promise((resolve) => app.server.listen(0, "127.0.0.1", resolve));
+
+  try {
+    const baseUrl = `http://127.0.0.1:${app.server.address().port}`;
+    const versionResponse = await fetch(`${baseUrl}/api/version`);
+    assert.equal(versionResponse.status, 200);
+    assert.equal(versionResponse.headers.get("cache-control"), "no-store");
+    const { version } = await versionResponse.json();
+    assert.equal(version, require("../package.json").version);
+
+    const pageResponse = await fetch(baseUrl);
+    const page = await pageResponse.text();
+    assert.match(page, new RegExp(`<meta name="app-version" content="${version.replace(/\./g, "\\.")}">`));
+    assert.doesNotMatch(page.match(/<meta name="app-version" content="[^"]+">/)[0], /__APP_VERSION__/);
+    assert.match(page, /Atualizar Aplicativo/);
+  } finally {
+    await new Promise((resolve) => app.server.close(resolve));
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
+test("persists accounts, sessions, and Pix settings in Supabase across server restarts", async () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "make-money-supabase-test-"));
+  const dataFile = path.join(temporaryDirectory, "state.json");
+  let savedRow = null;
+  const supabaseClient = {
+    from(table) {
+      assert.equal(table, "app_state");
+      return {
+        select(columns) {
+          assert.equal(columns, "payload");
+          return {
+            eq(column, value) {
+              assert.equal(column, "id");
+              assert.equal(value, "main");
+              return { maybeSingle: async () => ({ data: savedRow, error: null }) };
+            }
+          };
+        },
+        async upsert(row) {
+          savedRow = structuredClone(row);
+          return { error: null };
+        }
+      };
+    }
+  };
+  const options = {
+    dataFile,
+    supabaseClient,
+    adminEmail: "admin@example.com",
+    adminPassword: "MasterAdmin123!"
+  };
+  let app = createApp(options);
+
+  async function start(currentApp) {
+    await new Promise((resolve) => currentApp.server.listen(0, "127.0.0.1", resolve));
+    await currentApp.ready;
+    return `http://127.0.0.1:${currentApp.server.address().port}`;
+  }
+
+  try {
+    let baseUrl = await start(app);
+    const signup = await fetch(`${baseUrl}/api/auth/signup`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: "Participante Supabase",
+        email: "supabase@example.com",
+        password: "senha123",
+        confirmPassword: "senha123",
+        pixKey: "pix-participante"
+      })
+    });
+    assert.equal(signup.status, 200);
+    const participantCookie = signup.headers.get("set-cookie").split(";")[0];
+
+    const adminLogin = await fetch(`${baseUrl}/api/auth/signin`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: "admin@example.com", password: "MasterAdmin123!" })
+    });
+    assert.equal(adminLogin.status, 200);
+    const adminCookie = adminLogin.headers.get("set-cookie").split(";")[0];
+    const pixUpdate = await fetch(`${baseUrl}/api/admin/pix-payment`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Cookie: adminCookie },
+      body: JSON.stringify({ copyPaste: "pix-copia-e-cola", qrCodeUrl: "https://example.com/qr.png" })
+    });
+    assert.equal(pixUpdate.status, 200);
+    assert.equal(fs.existsSync(dataFile), false);
+
+    await new Promise((resolve) => app.server.close(resolve));
+    app = createApp(options);
+    baseUrl = await start(app);
+
+    const participantState = await fetch(`${baseUrl}/api/state`, {
+      headers: { Cookie: participantCookie }
+    });
+    assert.equal(participantState.status, 200);
+    const persistedState = await participantState.json();
+    assert.deepEqual(persistedState.pixPayment, {
+      copyPaste: "pix-copia-e-cola",
+      qrCodeUrl: "https://example.com/qr.png"
+    });
+
+    const adminOverview = await fetch(`${baseUrl}/api/admin/overview`, {
+      headers: { Cookie: adminCookie }
+    });
+    assert.equal(adminOverview.status, 200);
+    const overview = await adminOverview.json();
+    assert.equal(overview.participantAccounts[0].pixKey, "pix-participante");
+    assert.equal(savedRow.payload.sessions.length, 2);
+  } finally {
+    await new Promise((resolve) => app.server.close(resolve));
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
+test("imports an existing JSON state into Supabase when its table is empty", async () => {
+  const temporaryDirectory = fs.mkdtempSync(path.join(os.tmpdir(), "make-money-supabase-import-"));
+  const dataFile = path.join(temporaryDirectory, "state.json");
+  const legacyState = createInitialState();
+  legacyState.participants[0].name = "Conta legada";
+  legacyState.authUsers.push({
+    id: "legacy-user",
+    participantId: "member-1",
+    role: "participant",
+    name: "Conta legada",
+    email: "legado@example.com",
+    pixKey: "chave-pix-legada",
+    passwordSalt: "legacy-salt",
+    passwordHash: "legacy-hash",
+    createdAt: new Date().toISOString()
+  });
+  legacyState.pixPayment = { copyPaste: "pix-legado", qrCodeUrl: "https://example.com/legacy.png" };
+  fs.writeFileSync(dataFile, JSON.stringify(legacyState), "utf8");
+  let savedRow = null;
+  const supabaseClient = {
+    from() {
+      return {
+        select() {
+          return {
+            eq() {
+              return { maybeSingle: async () => ({ data: savedRow, error: null }) };
+            }
+          };
+        },
+        async upsert(row) {
+          savedRow = structuredClone(row);
+          return { error: null };
+        }
+      };
+    }
+  };
+
+  try {
+    const app = createApp({
+      dataFile,
+      supabaseClient,
+      adminEmail: "admin@example.com",
+      adminPassword: "MasterAdmin123!"
+    });
+    await app.ready;
+    assert.equal(savedRow.payload.authUsers.find((user) => user.id === "legacy-user").pixKey, "chave-pix-legada");
+    assert.deepEqual(savedRow.payload.pixPayment, legacyState.pixPayment);
+    assert.equal(savedRow.payload.authUsers.some((user) => user.role === "admin"), true);
+  } finally {
+    fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  }
+});
+
+test("refuses a Supabase publishable key as the server persistence credential", () => {
+  assert.throws(() => createApp({
+    supabaseUrl: "https://example.supabase.co",
+    supabaseServiceRoleKey: "sb_publishable_example"
+  }), /chave secreta de servidor/);
 });
