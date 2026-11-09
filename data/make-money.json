@@ -2007,7 +2007,13 @@
       "createdAt": "2026-11-07T21:43:58.436Z"
     }
   ],
-  "sessions": [],
+  "sessions": [
+    {
+      "tokenHash": "a6a4e59346d9c16741fb537e3b1c8d51077dfd8b3c95fd0b7920baefeb82487c",
+      "userId": "4fefa58c-5621-46ce-b7ec-85a15eae300b",
+      "expiresAt": 1796854078633
+    }
+  ],
   "pixPayment": {
     "copyPaste": "00020101021226810014br.gov.bcb.pix2559qr.woovi.com/qr/v2/cob/4a86db88-e82b-42d4-80f0-06a901dbe40a520400005303986540510.005802BR5909PUSHINPAY6011HORTOLANDIA62290525f0cf536850d64e7a851b52911630495E2",
     "qrCodeUrl": "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=00020101021226810014br.gov.bcb.pix2559qr.woovi.com/qr/v2/cob/4a86db88-e82b-42d4-80f0-06a901dbe40a5204000053033986540510.005802BR5909PUSHINPAY6011HORTOLANDIA62290525f0cf536850d64e7a851b52911630495E2"
